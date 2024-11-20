@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="./src/output.css"> -->
+    <link rel="stylesheet" href="style_home.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+  <header>
+    <nav class="navbar">
+      <div class="nav-title">
+        <a href="#"
+          ><img class="logo" src="logo\ergo-logo.svg" alt="About ergo"
+        /></a>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-list">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Discord</a></li>
+        </ul>
+        <button class="nav-start-btn" type="submit">Start Now</button>
+      </div>
+    </nav>
+  </header>
+<main>
+<div class="container mx-auto bg-black m-10 rounded-lg p-5">
+    
+        <div class="border-b border-gray-700 flex items-center justify-between ">
+            <div class="text-2xl border-b pb-4 z-5 border-orange-600">Overall stats</div>
+            <div class="flex items-center gap-3">
+                <h3>Currency</h3>
+                <div class="flex items-center border rounded-full px-2 py-1">
+                    <h3 class="pr-3">USD</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-5 flex justify-between">
+          <div class="bg-gray-900 rounded-xl p-4 w-1/4 flex flex-col g-3 items-center">
+            <div class="border-b min-w-full justify-items-center pb-3 border-gray-700">
+              <h1>Current Hashrate</h1>
+            </div>
+            <div class="flex flex-col lg:flex-row items-center pt-4 gap-2">
+            <h2 class="text-lg lg:text-3xl">99.99</h2>
+            <h4>MH/S</h4> 
+            </div>
+          </div>
+          <div class="bg-gray-900 rounded-xl p-4 w-1/4 flex flex-col g-3 items-center">
+            <div class="border-b min-w-full justify-items-center pb-3 border-gray-700">
+              <h1>Balances</h1>
+            </div>
+            <div class="flex items-center pt-4 gap-2">
+            <h2 class="text-lg lg:text-3xl">$00.00</h2>
+             
+            </div>
+          </div>
+          <div class="bg-gray-900 rounded-xl p-4 w-1/4 flex flex-col g-3 items-center">
+            <div class="border-b min-w-full justify-items-center pb-3 border-gray-700">
+              <h1>Inactive Worker Notice</h1>
+            </div>
+            <div class="flex items-center pt-4 gap-2">
+            <h2 class="text-lg lg:text-3xl">1 /</h2>
+            <h2 class="text-lg lg:text-3xl text-orange-600">0</h2>
+            </div>
+          </div>
+        </div>
+
+        <div>
+           <div class="border-b border-gray-800 py-6">
+            <h2 class="text-xl">Worker (chipset) monitoring</h2>
+           </div>
+
+           <div class="container relative overflow-auto mx-auto my-2 py-3 rounded-xl bg-gray-800">
+            <div><h1>Worker Summary</h1></div>
+            <table class="min-w-full  overflow-hidden text-xs py-4">
+              <thead class="bg-orange-600 text-left rounded-lg">
+                <tr >
+                  <th class="px-4 py-2">User name</th>
+                  <th class="px-4 py-2">Status</th>
+                  <th class="px-4 py-2">Hashrate</th>
+                  <th class="px-4 py-2">Last Start Time</th>
+                  <th class="px-4 py-2">Global Worker Raning</th>
+                </tr>
+              </thead>
+              <tbody id="TableBody">
+              
+                <tr  class="border-b border-gray-700">
+                  <td class="px-4 py-2">User name</td>
+                  <td class="px-4 py-2">Active</td>
+                  <td class="px-4 py-2">99 MH/s</td>
+                  <td class="px-4 py-2">6 Hours</td>
+                  <td class="px-4 py-2">66</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+</div>
+</main>
+<footer>
+  <div class="foot">
+    <div class="ergo-foot-logo">
+      <img src="logo/ergo-logo.svg" alt="Ergo-logo">
+    </div>
+    <div class="ergo-info">
+      <p>Send, receive, and exchange Bitcoin,Ethereum, & Bitcoin Cash instantly.</p>
+      <div class="ergo-info-sty">
+        <!-- <ul class="foot-ergo-info anchor-decor"> -->
+        <a class="anchor-decor" href="#"><img src="Assets/icons/address.png" alt="Address">962 Fifth Avenue, 3rd Floor New York.</a>
+        <a class="anchor-decor" href="#"><img src="Assets/icons/mail.png" alt="Mail">info@ergo.com</a>
+        <a class="anchor-decor" href="#"><img src="Assets/icons/call.png" alt="Phone Number">06 18 00 06 28</a>
+    
+    </div>
+    </div>
+    <div id="line-break"></div>
+    <div class="foot-help">
+      <!-- <ul class="help anchor-decor"> -->
+        <h3 class="head-foot">Help</h3>
+      <a class="anchor-decor" href="#">Features</a>
+      <a class="anchor-decor" href="#">Merket</a>
+      <a class="anchor-decor" href="#">Company</a>
+      <a class="anchor-decor" href="#">Team</a>
+      <!-- </ul> -->
+    </div>
+    <div class="foot-quick-link">
+      <!-- <ul class="quick-link anchor-decor"> -->
+        <h3 class="head-foot">Quick Link</h3>
+        <a class="anchor-decor" href="#">About Us</a>
+        <a class="anchor-decor" href="#">Our Services</a>
+        <a class="anchor-decor" href="#">Clients Reviews</a>
+        <a class="anchor-decor" href="#">Mining</a>
+      <!-- </ul> -->
+    </div>
+    <div class="foot-social-link">
+      <div class="social-link">
+        <h3 class="head-foot">Follow Us</h3>
+        <a href="#"><img src="Assets/icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="Assets/icons/x.png" alt="Twitter"></a>
+        <a href="#"><img src="Assets/icons/Vector.png" alt="Elephant"></a>
+        <a href="#"><img src="Assets/icons/github.png" alt="Github"></a>
+      </div>
+    </div>
+  </div>
+  <div class="credit">Copyright © 2022all rights reserved</div>
+  
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

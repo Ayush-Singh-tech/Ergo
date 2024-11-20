@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  color: rgba(255, 255, 255, 1);
+}
+
+.navbar {
+  width: 100vw;
+  background-color: rgba(0, 4, 30, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 90px;
+  position: sticky;
+  cursor: pointer;
+}
+.nav-title {
+  width: 45%;
+}
+.nav-title a {
+  height: 50px;
+  display: inline-table;
+}
+.nav-right {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav-list li {
+  padding: 30px;
+  text-align: right;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+}
+.nav-list li a:hover {
+  color: #ff4221;
+}
+.nav-start-btn {
+  background-color: rgba(255, 66, 33, 1);
+  color: white;
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: 0.313rem;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav-start-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(255, 66, 33, 1);
+}
+
+@media only screen and (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .nav-title {
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+  }
+  .nav-right {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ergo-home-background {
+  background-image: url("logo/Group\ 106.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.ma-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.home-heading {
+  text-align: center;
+  font-size: 68px;
+  margin: 30px;
+  padding: 100px 15px 15px 15px;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.para {
+  font-size: 1.125rem;
+  text-align: center;
+  font-weight: 300;
+  width: 65%;
+  margin: auto;
+}
+.main_image {
+  height: auto;
+  width: 100%;
+  margin: 7em 0em;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  border-radius: 3.125rem;
+  height: 4.875rem;
+  width: 29.938rem;
+  gap: 10.625rem;
+  border: 1px solid white;
+  margin-top: 3.438rem;
+  text-overflow: clip;
+}
+.search-button {
+  background: transparent;
+  margin-right: -4.688rem;
+  border: none;
+}
+.search-button-res {
+  display: none;
+}
+.search-left {
+  margin-left: 2.188rem;
+  display: flex;
+  gap: 0.625rem;
+}
+.search-left input {
+  background: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 550px) {
+  .search-form {
+    width: auto;
+    height: 40px;
+  }
+  .search-button {
+    display: none;
+  }
+  .search-button-res {
+    background: transparent;
+    border: none;
+    display: flex;
+    margin: auto;
+    padding: 13px;
+  }
+  .main_image {
+    height: auto;
+    width: 100%;
+    margin: 2em 0em;
+  }
+}
+footer {
+  background-color: #0e0e0e;
+}
+.foot {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  padding: 70px 0px;
+}
+.foot div{
+  box-sizing: border-box;
+  padding: 8px;
+}
+.ergo-info {
+  width: 28%;
+}
+.ergo-info-sty {
+  width: 15rem;
+}
+.ergo-info p {
+  padding-bottom: 22px;
+}
+.head-foot {
+  padding-bottom: 25px;
+}
+.anchor-decor {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+.anchor-decor:hover {
+  color: #ff4221;
+  padding-left: 2px;
+}
+.anchor-decor img {
+  padding: 0px 20px 0px 0px;
+}
+#line-break {
+  border: 1px solid #ffffff75;
+  height: 220px;
+  padding: 0%;
+}
+.social-link a img {
+  padding: 10px;
+}
+.social-link a img:hover {
+  background-color: #ff4221;
+  border-radius: 50%;
+}
+.credit{
+  text-align: center;
+  border-top: 1px solid #ffffff75;
+  padding: 40px;
+  width: 80vw;
+  margin: auto;
+}
+@media only screen and (max-width: 900px){
+
+  .intro{
+width: 85vw;
+  }
+  .home-heading {
+    font-size: 45px;
+    margin: 10px;
+    padding: 25px 15px 15px 15px;
+  }
+
+  .foot {
+    padding: 25px;
+  }
+#line-break{
+  display: none;
+}
+.ergo-info-sty{
+  width: auto;
+}
+} 
+@media only screen and (max-width: 620px){
+  .foot{
+    flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align-last: center;
+
+  }
+  .ergo-info {
+    width: 90vw;
+  }
+  .ergo-info p{
+    text-align: center;
+  }
+  #line-break{
+    display: block;
+    border: 1px solid #ffffff75;
+    width: 90vw;
+    height: 0;
+    padding: 0%;
+  }
+
+}

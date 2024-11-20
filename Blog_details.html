@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Details</title>
+  <!-- <link rel="stylesheet" href="./src/output.css"> -->
+  <link rel="stylesheet" href="style_home.css">
+  <link rel="stylesheet" href="style_harware_comparison.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <header>
+    <nav class="navbar">
+      <div class="container min-w-[90vw] mx-auto">
+        <div class="nav-title">
+          <a href="#"><img class="logo" src="logo\ergo-logo.svg" alt="About ergo" /></a>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Discord</a></li>
+          </ul>
+          <button class="nav-start-btn" type="submit">Start Now</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mx-auto p-6">
+      <div class="flex flex-col lg:flex-row gap-6">
+        <!-- Main Content -->
+        <div class="w-full lg:w-2/3">
+          <!-- Blog Image -->
+          <div>
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_640.jpg" alt="Nature class="
+              rounded-lg shadow-lg w-full object-center group-hover:opacity-75 transition duration-200">
+          </div>
+          <!-- Blog Metadata -->
+          <div class="mt-4 flex items-center text-gray-400 text-sm space-x-4">
+            <span>22 Nov 2023</span>
+            <span>|</span>
+            <span>Comment (12)</span>
+          </div>
+          <!-- Blog Title -->
+          <h1 class="text-3xl font-bold mt-4">Nvidia GeForce RTX 3080 Ti Comes With Reduced Mining Hashrate Too
+          </h1>
+          <!-- Blog Content -->
+          <p class="mt-4 text-gray-300 leading-relaxed">
+            When it comes to digital currencies, one question one may ask is: What would happen to my funds if I
+            happened to lose my wallet?
+          </p class="mt-4 text-gray-300 leading-relaxed">
+          <p>We hear about lost fortune stories all the time in Bitcoin. One may wonder, is it possible that the entire
+            supply of Bitcoin will eventually be locked away?
+          </p>
+          <p class="mt-4 text-gray-300 leading-relaxed">
+            Ergo presents a unique solution to these problems in the form of “storage rent fees”. In short, any UTXO’s
+            that remains unspent for 4 or more years will be charged a small fee for the storage of that UTXO on the
+            chain. These fees will be paid to miners as an incentive for physically storing these UTXOs and securing the
+            network.
+          </p>
+          <p class="mt-4 text-gray-300 leading-relaxed">What that means is that all Ergo must be transferred every 4
+            years, otherwise, you’d be charged a “small fee” over time for the uncirculating balance. You may be
+            wondering, “but what if someone invested in Ergo as a long term asset?” - that person would have to transfer
+            the balance to another address every four years to avoid the fees. Of course, you’d have to pay the
+            transaction fees to move the balance, so we can’t avoid all fees entirely… Can we? ;)</p>
+          <p class="mt-4 text-gray-300 leading-relaxed">It begs the question to economists - what if currency had an age
+            requirement? Similar to checks having a “this note expires after 90 days”. You may recall that certain
+            crypto currency valuation models state that the value of a crypto asset goes up relative to the amount of
+            transactions in the network.</p>
+
+          <hr class="h-px my-8 bg-gray-100 border-0">
+
+          <!-- Tags Section -->
+          <div class="mb-6 flex">
+            <h3 class="text-xl font-semibold mb-2">Tags:</h3>
+            <div class="flex gap-4 divide-y divide-y-reverse">
+              <span class="px-4 py-1  text-gray-300 hover:bg-gray-700 cursor-pointer transition">NFT</span>
+              <span class="px-4 py-1  text-gray-300  hover:bg-gray-700 cursor-pointer transition">Coin</span>
+              <span class="px-4 py-1  text-gray-300  hover:bg-gray-700 cursor-pointer transition">Game</span>
+            </div>
+          </div>
+
+          <hr class="h-px my-8 bg-gray-100 border-0">
+
+          <!-- Comments Section -->
+          
+    <div class="w-full max-w-2xl mt-8 p-6">
+      <h2 class="text-white text-lg font-semibold mb-4">
+          <span id="commentCount">0</span> Comments
+      </h2>
+       <!--Dummy Comment  -->
+        <div>
+          <div class="gap-4 py-4">
+            <div class="flex items-center justify-between">
+              <div class="flex">
+                <!-- User Image -->
+                <img src="https://via.placeholder.com/50" alt="User Image" class="w-12 h-12 rounded-full object-cover">
+                <div class="ml-3 mb-2">
+                  <div class="font-semibold text-lg">Admin</div>
+                  <div class="text-gray-400 text-sm">22 Nov 2023</div>
+                </div>
+              </div>
+              <span class="text-orange-600 underline cursor-pointer hover:text-orange-400">Reply</span>
+            </div>
+          
+            <div class="">
+              <p class="text-gray-300 mb-2">
+                This is a Dummy Mesage-
+                "Seamlessly iterate flexible Bandwidth Through Effective Proactive Mode."
+              </p>
+            </div>
+          </div>
+        </div>
+      <div id="commentsList" class="space-y-4 divide-y">
+    <!-- Dynamic Comments will appear here -->
+      </div>
+  </div>
+          
+            <!-- Leave a Comment Section -->
+             <h2 class="text-white text-lg font-semibold mb-4">Leave A Comment</h2>
+            <div class="w-full max-w-2xl bg-black rounded-lg p-6 shadow-lg">
+              
+              <form id="commentForm" class="space-y-4">
+                  <div class="flex flex-col sm:flex-row sm:gap-4">
+                      <input type="text" id="name" placeholder="Your Name"
+                          class="w-full bg-gray-700 rounded-lg px-4 py-2 text-gray-200 focus:outline-none focus:ring focus:ring-orange-500"
+                          required>
+                      <input type="email" id="email" placeholder="Your Email Address"
+                          class="w-full bg-gray-700 rounded-lg px-4 py-2 text-gray-200 focus:outline-none focus:ring focus:ring-orange-500"
+                          required>
+                  </div>
+                  <textarea id="message" placeholder="Message"
+                      class="w-full bg-gray-700 rounded-lg px-4 py-2 text-gray-200 focus:outline-none focus:ring focus:ring-orange-500"
+                      rows="4" required></textarea>
+                  <button type="submit"
+                      class="bg-orange-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-orange-600 transition">
+                      Submit
+                  </button>
+              </form>
+          </div>
+          
+
+        </div>
+
+
+        <!-- Sidebar -->
+        <div class="w-full lg:w-1/3 space-y-6">
+          <!-- Categories Section -->
+          <div class="bg-black p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Categories</h2>
+            <ul class="space-y-2 list-disc list-inside marker:text-orange-600">
+              <li><a href="#" class="text-gray-300 hover:text-white">Cloud Mining</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">Crypto Coins</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">Crypto ICOs</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">Mining Software</a></li>
+              <li><a href="#" class="text-gray-300 hover:text-white">Tests and Reviews</a></li>
+              </>
+          </div>
+
+          <!-- Recent Posts Section -->
+          <div class="bg-black p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Recent Post</h2>
+            <ul class="space-y-4 divide-y divide-gray-500">
+
+              <li class="flex">
+                <div class="mr-2 inline-block h-[50px] min-h-[1em] w-1 self-stretch bg-orange-500"></div>
+                <a href="#" class="text-gray-300 hover:text-white block">
+                  Nvidia GeForce RTX 3080 Ti Comes With Reduced Mining Hashrate Too
+                </a>
+              </li>
+              <li class="flex">
+                <div class="mr-2 inline-block h-[50px] min-h-[1em] w-1 self-stretch bg-orange-500"></div>
+                <a href="#" class="text-gray-300 hover:text-white block">
+                  Bitmain Teasing With The Upcoming AntMiner E9 Ethereum Miner
+                </a>
+              </li>
+              <li class="flex">
+                <div class="mr-2 inline-block h-[50px] min-h-[1em] w-1 self-stretch bg-orange-500"></div>
+                <a href="#" class="text-gray-300 hover:text-white block">
+                  Raptoreum (RTM) Crypto Project And Its GhostRider CPU
+                </a>
+              </li>
+              <li class="flex">
+                <div class="mr-2 inline-block h-[50px] min-h-[1em] w-1 self-stretch bg-orange-500"></div>
+                <a href="#" class="text-gray-300 hover:text-white block">
+                  AMD Radeon RX 6700 XT Ethereum Mining Hashrate And Efficiency
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot">
+      <div class="ergo-foot-logo">
+        <img src="logo/ergo-logo.svg" alt="Ergo-logo">
+      </div>
+      <div class="ergo-info">
+        <p>Send, receive, and exchange Bitcoin,Ethereum, & Bitcoin Cash instantly.</p>
+        <div class="ergo-info-sty">
+          <!-- <ul class="foot-ergo-info anchor-decor"> -->
+          <a class="anchor-decor" href="#"><img src="Assets/icons/address.png" alt="Address">962 Fifth Avenue, 3rd Floor
+            New York.</a>
+          <a class="anchor-decor" href="#"><img src="Assets/icons/mail.png" alt="Mail">info@ergo.com</a>
+          <a class="anchor-decor" href="#"><img src="Assets/icons/call.png" alt="Phone Number">06 18 00 06 28</a>
+
+        </div>
+      </div>
+      <div id="line-break"></div>
+      <div class="foot-help">
+        <!-- <ul class="help anchor-decor"> -->
+        <h3 class="head-foot">Help</h3>
+        <a class="anchor-decor" href="#">Features</a>
+        <a class="anchor-decor" href="#">Merket</a>
+        <a class="anchor-decor" href="#">Company</a>
+        <a class="anchor-decor" href="#">Team</a>
+        <!-- </ul> -->
+      </div>
+      <div class="foot-quick-link">
+        <!-- <ul class="quick-link anchor-decor"> -->
+        <h3 class="head-foot">Quick Link</h3>
+        <a class="anchor-decor" href="#">About Us</a>
+        <a class="anchor-decor" href="#">Our Services</a>
+        <a class="anchor-decor" href="#">Clients Reviews</a>
+        <a class="anchor-decor" href="#">Mining</a>
+        <!-- </ul> -->
+      </div>
+      <div class="foot-social-link">
+        <div class="social-link">
+          <h3 class="head-foot">Follow Us</h3>
+          <a href="#"><img src="Assets/icons/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="Assets/icons/x.png" alt="Twitter"></a>
+          <a href="#"><img src="Assets/icons/Vector.png" alt="Elephant"></a>
+          <a href="#"><img src="Assets/icons/github.png" alt="Github"></a>
+        </div>
+      </div>
+    </div>
+    <div class="credit">Copyright © 2022all rights reserved</div>
+
+  </footer>
+  <script src="script_blog_details.js"></script>
+</body>
+
+</html>
