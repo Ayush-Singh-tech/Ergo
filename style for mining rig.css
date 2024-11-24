@@ -16,11 +16,10 @@
     color: white;
     margin: auto;
     box-sizing: border-box;
+    padding: 1rem;
     
 }
-.pad{
-    padding: 7vw;
-}
+
 .mining-heading{
     font-family: "Rubik", sans-serif;
     font-weight:500;

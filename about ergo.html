@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>How To</title>
-    <link rel="stylesheet" href="style_home.css" />
-    <link rel="stylesheet" href="style for mining rig.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <link rel="stylesheet" href="./style_home.css" />
+    <link rel="stylesheet" href="./style for mining rig.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
-    />
+    />-->
     <link rel="stylesheet" href="style for about ergo.css">
-
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <header>
@@ -25,15 +25,53 @@
         </div>
         <div class="nav-right">
           <ul class="nav-list">
+            
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Discord</a></li>
-          </ul>
-          <button class="nav-start-btn" type="submit">Start Now</button>
+            <li><div class="relative">
+              <button id="dropdownMenuIconHorizontalButton" class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                type="button">
+                <svg class="w-4 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
+                  <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                </svg>
+              </button>
+          <!-- Dropdown menu -->
+          <div id="dropdownDotsHorizontal" class="z-15 absolute hidden bg-gray-700 w-48 mt-2 rounded-lg shadow">
+            <ul class="DropdownNav flex flex-col items-start text-sm ">
+              <li>
+                <a href="./about ergo.html" >About Ergo</a>
+              </li>
+              <li>
+                <a href="./how to build a mining rig.html" >How to Build a Mining Rig</a>
+              </li>
+              <li>
+                <a href="./hardware comparison.html" >Hardware Comparison</a>
+              </li>
+              <li>
+                <a href="./Dashboard.html" >Dashboard</a>
+              </li>
+              <li>
+                <a href="./Blog_grid.html" >Blog Grid</a>
+              </li>
+              <li>
+                <a href="./Blog_details.html" >Blog Details</a>
+              </li>
+              <li>
+                <a href="./complete_mining_tutorial.html" >Mining Tutorial</a>
+              </li>
+            </ul>
+          </div>
+          
+          </div></li>
+            
+            </ul>
+            
+            <button class="nav-start-btn" type="submit">Start Now</button>
         </div>
       </nav>
     </header>
     <main>
-        <div class="pajbd">
+        <div >
             <section class="about-first-section">
                 <h1 class="about-heading">What is Ergo?</h1>
                 <div>
@@ -162,5 +200,6 @@
       <div class="credit">Copyright © 2022all rights reserved</div>
       
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -1,3 +1,17 @@
+// Dropdown Menu
+
+const DropdownDots = document.getElementById('dropdownMenuIconHorizontalButton')
+const DropdownMenu = document.getElementById('dropdownDotsHorizontal')
+
+DropdownDots.addEventListener("click", ()=>{
+  if (DropdownMenu.classList.contains('hidden')) {
+    DropdownMenu.classList.remove('hidden')
+  } else {
+    DropdownMenu.classList.add('hidden')
+  }
+})
+
+
 
 // Table data 
 const apiUrl = "https://jsonplaceholder.typicode.com/users";
